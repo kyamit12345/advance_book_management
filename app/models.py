@@ -18,6 +18,6 @@ class Review(Base):
     user_id= Column(Integer,index=True)
     review_txt= Column(String, index=True)
     rating= Column(Integer)
-    book=relationship("Book", back_populates="reviews")
+    #book=relationship("Book", back_populates="reviews")
 
 

@@ -15,8 +15,8 @@ class BookRead(BaseModel):
     year_published:int
     summary:str
 
-    class Config:
-        orm_mode=True
+    class Config_Dict:
+        from_attributes=True
 
 class ReviewInsert(BaseModel):
     book_id:int
@@ -31,5 +31,5 @@ class ReviewRead(BaseModel):
     rating:int
     user_id:int
 
-    class Config:
-        orm_mode=True
+    class ConfigDict:
+        from_attributes=True

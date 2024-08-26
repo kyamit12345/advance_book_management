@@ -4,3 +4,7 @@ asyncpg
 databases
 pydantic
 uvicorn
+pytest
+httpx
+pytest-asyncio
+python-dotenv

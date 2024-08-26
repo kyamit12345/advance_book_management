@@ -7,7 +7,7 @@ from app.db import get_session
 
 router=APIRouter()
 
-@router.post("books/",response_model=BookInsert)
+@router.post("/books/",response_model=BookInsert)
 async def insert_book(book:BookInsert,session:AsyncSession=Depends(get_session)):
     return await book_insert(session,book)
 
